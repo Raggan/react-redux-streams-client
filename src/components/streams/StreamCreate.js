@@ -8,7 +8,7 @@ class StreamCreate extends Component {
       <div className="field">
         <label>{label}</label>
         <input {...input} />
-        <div className="error">{meta.error}</div>
+        <div className="">{meta.error}</div>
       </div>
     );
   }
