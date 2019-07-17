@@ -14,9 +14,8 @@ class StreamCreate extends Component {
   // renderInput(formProps) destructure--> formProps.input formProps.label
 
   renderInput = ({ input, label, meta }) => {
-    const className = `field ${meta.error && meta.touched ? "error" : ""}`;
     return (
-      <div className={className}>
+      <div className={`field ${meta.error && meta.touched ? "error" : ""}`}>
         <label>{label}</label>
         <input {...input} autoComplete="off" />
         {this.renderError(meta)}
